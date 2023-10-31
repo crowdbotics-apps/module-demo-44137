@@ -1,0 +1,15 @@
+{
+    "name": "@modules/first_demo_module",
+    "version": "1.0.1",
+    "description": "first_demo_module",
+    "private": true,
+    "main": "index.js",
+    "author": "Crowdbotics",
+    "license": "ISC",
+    "dependencies": {
+       
+    },
+    "x-dependencies": {
+       
+    }
+}

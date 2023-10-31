@@ -7,6 +7,7 @@ APPS = Path(MODULES_DIR).rglob("apps.py")
 
 
 def get_modules():
+    print('Nilay Saxena')
     try:
         modules = []
         python_package_separator = "."
@@ -14,6 +15,9 @@ def get_modules():
             app_name = app.as_posix().replace(MODULES_DIR, f"{MODULES_PACKAGE_NAME}/")
             app_name = python_package_separator.join(app_name.split("/")[:-1])
             modules.append(app_name)
+        print(modules)
         return modules
-    except (ImportError, IndexError):
-        pass
+    # except (ImportError, IndexError):
+    #     pass
+    except Exception as e:
+        print(str(e))
