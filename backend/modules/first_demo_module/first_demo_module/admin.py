@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import TermAndCondition
 
-# your admin configuration here
+
+@admin.register(TermAndCondition)
+class TermAndConditionAdmin(admin.ModelAdmin):
+    list_display = ['__str__', 'is_active', 'type']
